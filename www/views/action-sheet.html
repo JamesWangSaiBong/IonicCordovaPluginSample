@@ -1,5 +1,7 @@
 <ion-view view-title="Action Sheet" class="insurance-page">
 	<ion-content>
-		<p>{{dummy}}</p>
+		<button class="button" ng-click="openActionSheet()">Open Action Sheet</button>
+		
+		<p ng-if="selectedAction">You have selection this action: {{selectedAction}}</p>
 	</ion-content>
 </ion-view>
